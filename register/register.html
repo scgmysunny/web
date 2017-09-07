@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/rejister.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="content">
+            <div class="header">
+                <header>
+                    <div class="logo"><img src="./images/logo.png" alt="加载中..."></div>
+                    <div class="font">
+                        <h2>用户注册</h2></div>
+                </header>
+            </div>
+            <div class="forms">
+                <form action="#" method="post" onsubmit="return checkInput(this)">
+                    <label>用户名称：</label>
+                    <input class="inputclass" type="text" name="name" value="" minlength="6" maxlength="20" placeholder="请输入您的用户名！" required>
+                    <br>
+                    <br>
+                    <label>登录密码：</label>
+                    <input class="inputclass" type="password" name="password" value="" minlength="6" maxlength="20" placeholder="请输入您的密码！" required>
+                    <br>
+                    <br>
+                    <label>重复密码：</label>
+                    <input class="inputclass" type="password" name="checkPassword" value="" minlength="6" maxlength="20" placeholder="请再次输入密码！" minlength="6" maxlength="20" required>
+                    <br>
+                    <br>
+                    <label>用户名称：</label>
+                    <input class="inputclass" type="email" name="email" value="" placeholder="请输入您的邮箱！" required>
+                    <br>
+                    <br>
+                    <label>性　　别：</label>
+                    <input type="radio" name="sex" checked value="male">男
+                    <input type="radio" name="sex" value="female">女
+                    <br>
+                    <br>
+                    <label>职　　业：</label>
+                    <select class="style" name="profession" required>
+                        <option value="">学生</option>
+                        <option value="">教师</option>
+                        <option value="" selected>码农</option>
+                        <option value="">boss</option>
+                        <option value="">leader</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>爱　　好：</label>
+                    <select name="hobby" multiple required>
+                        <option value="">打球</option>
+                        <option value="">看书</option>
+                        <option value="">coding</option>
+                        <option value="">music</option>
+                        <option value="">fight</option>
+                    </select>
+            </div>
+            <div class="bottom">
+                <hr>
+                <div class="button">
+                    <button>注册</button>
+                    <button type="reset">重置</button>
+                </div>
+            </div>
+            </form>
+        </div>
+        <footer>
+            Copyright&nbsp; &copy; &nbsp;2017 苏晨光版权所有
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+body {
+    /* background-color: black; */
+}
+
+#container {
+    width: 1003px;
+    height: 1350px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-color: #030303;
+    background-image: url("../images/bg.png");
+    /*    background-color: yellow; */
+    position: relative;
+}
+
+#container .top {
+    width: 100%;
+    height: 255px;
+    /*     background-color: red; */
+    float: left;
+}
+
+#container .top .menu-bj {
+    width: 726px;
+    height: 160px;
+    /*     background-color: green; */
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-image: url("../images/navbj.png");
+    position: relative;
+    top: 118px;
+}
+
+#container .top .menu-bj .logo {
+    height: 160px;
+    width: 191px;
+    background-image: url("../images/logo.png");
+    margin: 0 auto;
+    position: absolute;
+    top: -45px;
+    left: 37%;
+}
+
+#container .top .menu-bj .font-left {
+    float: left;
+    width: 267.5px;
+}
+
+#container .top .menu-bj .font-right {
+    float: right;
+    width: 267.5px;
+}
+
+nav {
+    text-decoration: none;
+    font-size: 1em;
+    color: #D7BE1D;
+    line-height: 58px;
+    margin-left: 18px;
+    letter-spacing: 4px;
+}
+
+button {
+    background: none;
+    width: 152px;
+    height: 61px;
+    background-image: url("../images/vote-button.png");
+    border: 0;
+    position: relative;
+    top: 18px;
+    left: 62%;
+}
+
+#container .vote {
+    width: 100%;
+    height: 313px;
+    /*     background-color: blue; */
+    float: left;
+}
+
+#container .vote .left {
+    height: 100%;
+    width: 50%;
+    float: left;
+    /*  background-color: pink; */
+    background-image: url("../images/vote.png");
+    float: left;
+}
+
+#container .vote .right {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+#container .vote .right1 {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+#container .abstract {
+    width: 50%;
+    height: 240px;
+    margin-left: 13%;
+    float: left;
+}
+
+#container .abstract .title {
+    padding-top: 28px;
+    height: auto;
+    width: 100%;
+    float: left;
+}
+
+#container .abstract .left {
+    background: none;
+    width: 63px;
+    height: auto;
+    float: left;
+}
+
+#container .abstract .right {
+    float: left;
+    width: 60%;
+    height: auto;
+}
+
+article {
+    font-size: 1.2em;
+    font-family: "楷体";
+}
+
+#container .space {
+    width: 50%;
+    height: 240px;
+    /*     background-color: green; */
+    position: relative;
+    left: 50%;
+    top: 43.5%;
+}
+
+#container .space .log {
+    height: 41px;
+    width: 159px;
+    background-image: url("../images/space-log.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#container .space .website {
+    width: 193px;
+    height: 41px;
+    background-repeat: no-repeat;
+    background-image: url("../images/website.jpg");
+    position: absolute;
+    top: 0;
+    left: 159px;
+}
+
+#container .space .log-bj {
+    width: 350px;
+    height: 167px;
+    background-image: url("../images/space-log-bj.jpg");
+    position: absolute;
+    top: 50px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -20px;
+    font-size: 0.8em;
+    color: white;
+    font-family: "楷体";
+    line-height: 23px;
+}
+
+#container .space .log-bj .right {
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 100%;
+}
+
+.font-color {
+    color: #F1BB08;
+}
+
+span {
+    font-size: 0.5em;
+}
+
+#container .combat {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    top: 43%;
+    background-position: center;
+    background-image: url("../images/combat-title.png");
+    /*      background-color: yellow; */
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+}
+
+#container .combat .intro1 {
+    width: 79px;
+    height: 158px;
+    /* background-color: pink; */
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+
+#container .combat .intro2 {
+    width: 79px;
+    height: 158px;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+}
+
+#container .combat .intro3 {
+    width: 79px;
+    height: 158px;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+}
+
+#container .combat .intro4 {
+    width: 79px;
+    height: 158px;
+    position: absolute;
+    top: 35%;
+    left: 58%;
+}
+
+#container .combat .intro5 {
+    width: 79px;
+    height: 158px;
+    position: absolute;
+    top: 35%;
+    left: 71%;
+}
+
+#container .personal {
+    width: 100%;
+    height: 150px;
+    /*  background-color: red; */
+    position: relative;
+    top: 40%;
+    background-image: url("../images/personal-bj.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+#container .personal .title {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    left: 10%;
+    top: -30px;
+}
+
+#container .personal .message {
+    position: absolute;
+ /*    background-color: red; */
+    left: 17%;
+    top: 30%;
+    line-height: 1em;
+}
+
+footer {
+    width: 100%;
+    height: 69px;
+ /*    background-color: green; */
+    position: relative;
+    top: 39%;
+}
+#container .fotter1{
+    width: 100px;
+    height: 62px;
+    position: absolute;
+    left: 18%;
+}
+#container .fotter2{
+    width: 100px;
+    height: 62px;
+    position: absolute;
+    left: 30%;
+}
+#container .fotter3{
+    width: 100px;
+    height: 62px;
+    position: absolute;
+    left: 42%;
+}
+#container .fotter4{
+    width: 100px;
+    height: 62px;
+    position: absolute;
+    left: 54%;
+}

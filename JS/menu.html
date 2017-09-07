@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    #container {
+        width: 210px;
+        height: 220px;
+        /*  background-color: pink;*/
+        margin: 0 auto;
+    }
+
+    #container .left,
+    #container .right {
+        width: 50%;
+        height: 100%;
+        float: left;
+        /*  background-color: yellow;*/
+    }
+
+    #container .right .top {
+        width: 100px;
+        height: 20%;
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+        line-height: 44px;
+        text-indent: 20px;
+        background-color: #3A5FCD;
+        margin-left: 5px;
+    }
+
+    #container .left .top {
+        width: 100px;
+        height: 20%;
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+        line-height: 44px;
+        text-indent: 20px;
+        background-color: #3A5FCD;
+        margin-right: 5px;
+    }
+
+    #container .left .bottom {
+        width: 100px;
+        height: 80%;
+        background-color: #C7C7C7;
+        text-indent: -20px;
+    }
+    /*ul列表样式*/
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        font-size: 25px;
+        line-height: 44px;
+    }
+    </style>
+    <script type="text/javascript">
+    window.onload = function() {
+        var click = document.getElementById("click");
+        click.onclick = function() {
+            // 获取样式信息通过id
+            var displayStyle = under.style.display;
+
+            // 判断样式信息是否已隐藏
+            if (displayStyle === "block") {
+                under.style.display = "none";
+            } else {
+                under.style.display = "block";
+            }
+
+        };
+    }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="left">
+            <div id="click" class="top">文件</div>
+            <div id="under" class="bottom" style="display: none;">
+                <ul>
+                    <li>新建</li>
+                    <li>打开</li>
+                    <li>保存</li>
+                    <li>关闭</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top">编辑</div>
+        </div>
+    </div>
+</body>
+
+</html>

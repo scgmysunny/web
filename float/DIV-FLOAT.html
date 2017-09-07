@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style type="text/css">
+    #container {
+        width: 700px;
+        height: 700px;
+        background-color: white;
+        margin: 0 auto;
+        border: 3px solid rgba(84, 255, 159, 0.3);
+        font-weight: 600;
+        font-size: 45PX;
+        text-align: center;
+    }
+
+    #container .top {
+        width: 400px;
+        height: 200px;
+        background-color: pink;
+        margin: 50px 0px 0px 50px;
+        float: left;
+        line-height: 200px;
+    }
+
+    #container .right {
+        width: 200PX;
+        height: 400PX;
+        margin: 50px 50px 0px 0px;
+        background-color: blue;
+        line-height: 400px;
+        float: right;
+    }
+
+    #container .left {
+        width: 200PX;
+        height: 400PX;
+        background-color: yellow;
+        margin: 0px 0px 50px 50px;
+        line-height: 400px;
+        float: left;
+    }
+
+    #container .center {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 0;
+        line-height: 200px;
+        float: left;
+    }
+
+    #container .bottom {
+        width: 400px;
+        height: 200px;
+        background-color: green;
+        margin: 0px 50px 50px 0px;
+        float: left;
+        line-height: 200px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="top">TOP</div>
+        <div class="right">RIGHT</div>
+        <div class="left">LEFT</div>
+        <div class="center">CENTER</div>
+        <div class="bottom">BOTTOM</div>
+    </div>
+</body>
+
+</html>

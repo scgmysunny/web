@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>randomColor</title>
+    <style type="text/css" media="screen">
+    #container {
+        height: 340px;
+        width: 220px;
+        margin: 0 auto;
+        margin-top: 100px;
+        border: 2px solid red;
+    }
+
+    #content {
+        width: 180px;
+        height: 250px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: pink;
+    }
+
+    #content .font {
+        width: 20px;
+        margin: 0 auto;
+        line-height: 36px;
+        font-size: 20px;
+        color: white;
+    }
+
+    button {
+        width: 180px;
+        margin-left: 20px;
+    }
+    </style>
+    <script type="text/javascript">
+    window.onload = function() {
+        var button = document.getElementsByTagName("button")[0];
+        var content = document.getElementById("content");
+        button.onclick = function() {
+            var opacity = null;
+            while (opacity === null || opacity.trim() === "") {
+                opacity = prompt("请输入一个透明度0-1：");
+                if (isNaN(opacity)) {
+                    // alert("请输入有效值");
+                    opacity = null;
+                } else {
+                    if (opacity > 1 || opacity < 0) {
+                        opacity = null;
+                    }
+                }
+            }
+            this.r = Math.ceil(Math.random() * 255);
+            this.g = Math.ceil(Math.random() * 255);
+            this.b = Math.ceil(Math.random() * 255);
+            this.color = "rgba(" + this.r + ',' + this.g + ',' + this.b + ',' + opacity + ")";
+            content.style.backgroundColor = this.color;
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <div class="font">随机颜色生成器</div>
+        </div>
+        <br>
+        <button>生成一个随机颜色</button>
+    </div>
+</body>
+
+</html>

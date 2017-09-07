@@ -1,0 +1,64 @@
+<!DOCtiTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>字母跳动</title>
+    <style type="text/css" media="screen">
+    #container {
+        width: 200px;
+        height: 30px;
+        background-color: black;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .diamonds {
+        width: 10px;
+        height: 40px;
+        background-color: #F71414;
+        position: absolute;
+        top: -5px;
+        animation: move2 1s infinite alternate;
+    }
+
+    .center {
+        width: 400px;
+        height: 30px;
+        margin: 0 auto;
+        color: white;
+        margin-top: 50px;
+        position: absolute;
+        top: -50px;
+        left: -100px;
+        animation: move 0.2s linear infinite reverse;
+    }
+
+    @keyframes move {
+        from {
+            transform: translate(100px, 0);
+        }
+        to {
+            transform: translate(-100px, 0);
+        }
+    }
+    @keyframes move2{
+    	from {
+            transform: translate(200px, 0);
+        }
+        to {
+            transform: translate(0, 0);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="diamonds"></div>
+        <div class="center"> a f b r g a h f d r f g e t b v d x d f t i m f g v c s v u i </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="D:\Program Files\nodejs\node_modules\jquery\dist\jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function() {
+        //id选择器
+       $("#container").html();
+       //类选择器
+       $(".training-content").html();
+       //标签选择器
+       $("div");
+
+       //复合集选择器
+       $("#container,.training-content")
+       // 复合交集选择器
+       $(".training-content.active")
+
+  			// 层级后代选择器
+			$("#container .training-content")
+
+			// 层级子选择器
+			$("#container>.training-content").css("color", "red");
+
+			// 层级相邻选择器
+			$("#container+.training-content").css("color", "green");
+
+			// 获取name属性为username的input元素
+			$("input[name='username']").css("background-color", "pink");
+
+			// 获取name属性不为username的input元素
+			$("input[name!='username']").css("background-color", "blue");
+
+			// 获取name属性已username开头的input元素
+			$("input[name^='username']").css("background-color", "grey");
+
+			// 获取name属性已username结尾的input元素
+			$("input[name$='username']").css("background-color", "green");
+
+			// 获取name属性中包含username的input元素
+			$("input[name*='username']").css("background-color", "#ff6dc9");
+
+			// 获取所有class为training-content的元素中索引为2的元素，也就是第三个元素
+			$(".training-content:eq(2)").css("color", "yellow");
+
+			// 获取所有class为training-content的元素中索引大于2的元素，也就是第三个元素之后的所有元素
+			$(".training-content:gt(2)").css("color", "blue");
+
+			// 获取所有class为training-content的元素中索引小于2的元素，也就是第三个元素之前的所有元素
+			$(".training-content:lt(2)").css("color", "blue");
+
+			// 获取所有class为training-content的元素中偶数行元素
+			$(".training-content:even").css("color", "red");
+
+			// 获取所有class为training-content的元素中奇数行元素
+			$(".training-content:odd").css("color", "pink");
+
+			// 获取所有class为training-content的元素中第一个元素
+			$(".training-content:first").css("color", "blue");
+
+			// 获取所有class为training-content的元素中最后一个元素
+			$(".training-content:last").css("color", "grey");
+
+			// 获取被选中的input元素
+			$("input:checked").length;
+
+			// 获取被禁用的input元素
+			$("input:disabled").length;
+
+			// 获取所有class为training-content的元素内容包含text的元素
+			$(".training-content:contains('text')").css("background-color", "green");
+
+			// 获取所有class为training-content的元素内容为空的元素
+			$(".training-content:empty").css("background-color", "blue");
+
+			// 获取class为training-content的元素中包含p标签的元素
+			$(".training-content:has(p)").css("background-color", "#822db0");
+
+			// 获取class为training-content且class不为active的元素
+			$(".training-content:not(.active)").css("background-color", "#822db0");
+
+    });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="training-content">0
+            <input type="checkbox" name="" checked>
+            <input type="checkbox" name="" checked>
+            <input type="checkbox" name="" disabled>
+            <input type="checkbox" name="">
+        </div>
+        <div class="training-content">1
+            <input type="text" abcd="abcd" name="username" placeholder="username">
+            <input type="text" name="username1" placeholder="username1">
+            <input type="text" name="1username" placeholder="1username">
+            <input type="text" name="password" placeholder="password">
+        </div>
+        <div class="training-content">2text</div>
+        <div class="training-content active">
+            <p class="pcontent">ssss</p>
+            3
+            <!-- <div class="training-content">7</div> -->
+        </div>
+        <div class="training-content">4text</div>
+        <div class="training-content">5</div>
+        <div class="training-content" style="height: :40px;"></div>
+        <div class="training-content" style="height: :40px;"></div>
+    </div>
+    <!-- <div class="training-content">6</div> -->
+</body>
+
+</html>

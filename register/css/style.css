@@ -1,0 +1,102 @@
+#container {
+    width: 800px;
+    height: 610px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 10px;
+    background-size: 800px 610px;
+    background-repeat: no-repeat;
+    background-image: url("../images/bg.jpg");
+    position: relative;
+}
+
+#container .content {
+    width: 600px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 20px;
+    position: relative;
+}
+
+#container .content .header {
+    position: relative;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    top: 60%;
+    line-height: 50px;
+    font-family: "等线";
+}
+
+.inputclass {
+    width: 250px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+}
+
+#container .content .header .logo {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    left: 180px;
+    top: 20px;
+}
+
+#container .content .header .font {
+    width: 60%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    left: 280px;
+    top: 20px;
+}
+
+#container .content .forms {
+    height: 160px;
+    width: 100%;
+    position: relative;
+}
+
+form {
+    margin: 0 auto;
+    position: absolute;
+    top: 40px;
+    left: 25%;
+}
+
+.style {
+    width: 250px;
+    height: 20px;
+}
+
+select {
+    width: 250px;
+    vertical-align: middle;
+}
+
+#container .content .bottom {
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 84%;
+}
+
+#container .content .button {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+button {
+    width: 70px;
+}

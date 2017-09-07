@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings</title>
+    <style type="text/css">
+    #container {
+        width: 60%;
+        font-size: 30px;
+        background-color: pink;
+        text-align: center;
+        height: 50px;
+        margin: 0 auto;
+    }
+    </style>
+    <script type="text/javascript">
+    // 加载页面 执行函数
+    window.onload = function() {
+        setInterval(function() {
+            show();
+        }, 1000);
+
+    }
+    // 获取时间
+    function show() {
+        var time = document.getElementById("container");
+        var now = new Date();
+        var nowTime = now.toLocaleString();
+        var date = nowTime.substring(0, 9); //截取日期 
+        var time = nowTime.substring(9, 20); //截取时间 
+        var week = now.getDay(); //星期 
+        var weeks = ["日", "一", "二", "三", "四", "五", "六"];
+        var getWeek = "星期" + weeks[week];
+        var weeks = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        document.getElementById("container").innerHTML = "现在时间为：" + date + "  " + "  " + "  " + time + "  " + "  " + "  " + getWeek;
+    }
+    // 点击确定不再弹出
+    setTimeout(function() {
+        popup();
+    }, 2000);
+    // 弹出框方法
+    function popup() {
+        var date = new Date();
+        var hours = date.getHours();
+        if (hours >= 5 && hours < 8) {
+            setTimeout("alert('早上好！！！')", 1000);
+        } else if (hours >= 8 && hours < 12) {
+            setTimeout("('上午好！！！')", 1000);
+        } else if (hours >= 12 && hours < 18) {
+            var timer = setTimeout("alert('下午好！！！')", 1000);
+        } else if (hours >= 18 && hours < 21) {
+            setTimeout("alert('晚上好！！！')", 1000);
+        } else if (hours >= 21 && hours < 23) {
+            setTimeout("alert('祝你晚安！！！')", 1000)
+        } else if (hours >= 23 && hours < 24 || hours >= 0 && hours < 5) {
+            setTimeout("alert('网虫！！该休息啦！！！')", 1000)
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+</body>
+
+</html>

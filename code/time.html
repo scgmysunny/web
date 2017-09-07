@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>欢迎界面</title>
+    <style type="text/css">
+    #time {
+        background-color: pink;
+        margin: border-color: rgba(220, 220, 220, 0.5);
+        width: 50%;
+        height: 60px;
+        font-size: 35px;
+    }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+    function showTime() {
+        var now = new Date();
+        var nowTime = now.toLocaleString();
+        var date = nowTime.substring(0, 9); //截取日期 
+        var time = nowTime.substring(12, 20); //截取时间 
+        var week = now.getDay(); //星期 
+        var hour = now.getHours(); //小时 
+        //判断星期几 
+        var weeks = ["日", "一", "二", "三", "四", "五", "六"];
+        var getWeek = "星期" + weeks[week];
+        var sc;
+        //判断是AM or PM 
+        if (hour >= 5 && hour < 8) {
+            sc = '凌晨';
+            setTimeout("alert('早上好！！！')", 5000);
+        } else if (hour > 8 && hour <= 12) {
+            sc = '上午';
+            setTimeout("('上午好！！！')", 5000);
+        } else if (hour > 12 && hour <= 18) {
+            sc = '下午';
+            time3 = setTimeout("alert('下午好！！！')", );
+
+        } else if (hour > 18 && hour <= 21) {
+            sc = '晚上';
+            setTimeout("alert('晚上好！！！')", 5000);
+        } else if (hour > 21 && hour <= 23) {
+            sc = '夜间';
+            setTimeout("alert('祝你晚安！！！')", 5000)
+        } else if (hour > 23 && hour <= 24 || hour > 0 && hour < 5) {
+            sc = '深夜';
+            setTimeout("alert('网虫！！该休息啦！！！')", 5000)
+        }
+        document.getElementById('time').innerHTML = "现在时间为：" + date + "  " + " " + sc + "  " + time + " " + "  " + "  " + getWeek;
+        setTimeout('showTime()', 1000);
+    }
+    </script>
+
+    <body onload="showTime()">
+        <div id="time"></div>
+    </body>
+
+</html>

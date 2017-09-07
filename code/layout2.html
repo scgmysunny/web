@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>layout2</title>
+    <style type="text/css">
+    /*绝对定位，通过position：absoult
+    通过left top  right  bottom 的属性值来确定位置*/
+    #one {
+        width: 30%;
+        background-color: blue;
+        height: 60px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        text-align: center;
+    }
+
+    #two {
+        width: 55%;
+        background-color: red;
+        height: 60px;
+        position: absolute;
+        left: 30%;
+        top: 0px;
+        text-align: center;
+    }
+
+    #three {
+        width: 15%;
+        background-color: yellow;
+        height: 60px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="one">第一块</div>
+        <div id="two">第二块</div>
+        <div id="three">第三块</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>新员工信息录入</title>
+    <style type="text/css">
+    body {
+        text-align: left;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>添加新员工</h2>
+        <form method="post" action="">
+            <!-- 文本框 -->
+            <p>员工姓名：
+                <input type="text" name="name" placeholder="请输入员工姓名" autofocus>
+            </p>
+            <!-- 初始默认密码1234 -->
+            <p>初始密码：
+                <input type="text" name="password" value="1234">
+            </p>
+            <!-- 单选按钮 -->
+            <p>状态：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="state" value="online" checked="checked">在职
+                <input type="radio" name="state" value="offline">离职</p>
+            <!-- 下拉列表框 -->
+            <p>员工等级：
+                <select name="level" size="1">
+                    <option value="intern" selected="selected">门店-实习生</option>
+                    <option value="empioyee">正式员工</option>
+                </select>
+            </p>
+            <p>角色：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="level" size="1">
+                    <option value="boss">董事长</option>
+                    <option value="manager">总经理</option>
+                    <option value="charge">主管</option>
+                    <option value="admin" selected="selected">管理员</option>
+                    <option value="staff">普通员工</option>
+                </select>
+            </p>
+            <p>部门：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="level" size="1">
+                    <option value="store" selected="selected">门店部</option>
+                    <option value="headoffice">总部</option>
+                </select>
+            </p>
+            <!-- 单选按钮    出现bug  同时可选  要保持name 值一致-->
+            <p>性别：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="sex" value="">男
+                <input type="radio" name="sex" value="" checked="checked">女</p>
+            <P>住址：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="adress" placeholder="请输入员工住址">
+            </p>
+            <p>电话：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="phone" placeholder="请输入员工号码">
+            </p>
+            <p>所属店铺：
+                <select name="level" size="1">
+                    <option value="zunyi" selected="selected">遵义店</option>
+                    <option value="beijing">北京店</option>
+                </select>
+            </p>
+            <p>电子邮箱：
+                <input type="text" name="email" placeholder="请输入员工邮箱">
+            </p>
+            <input type="submit" name="submit" value="提交">
+        </form>
+    </div>
+</body>
+
+</html>
