@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+</head>
+
+<body>
+    <h3>这里演示最基础的jQuery对象使用方法</h3>
+    <div id="container">
+        我是一个Div
+    </div>
+    <p class="container">我是第一个p标签</p>
+    <p class="container">我是第二个p标签</p>
+    <!--引入jQuery框架库文件 -->
+    <script src="D:\Program Files\nodejs\node_modules\jquery\dist\jquery.min.js"></script>
+    <script type="text/javascript">
+        //页面加载完成后，执行的方法
+        $(function() {
+            //定义一个id为container
+            var container = $('#container');
+            //获取并打印div中的html内容
+            alert(container.html());
+            //设置div内容
+            container.html("修改div中内容");
+            //返回class为container的jQuery对象
+            var p = $('.container');
+            //打印第一个p标签内容
+            alert(p.eq(0).html());
+            //打印第二个p标签内容
+            alert(p.eq(1).html());
+        });
+    </script>
+</body>
+
+</html>

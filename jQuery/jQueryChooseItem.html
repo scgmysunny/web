@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+       <script src="http://code.jquery.com/jquery-2.1.3.js">
+    </script>
+</head>
+
+<body>
+    <h3>这里演示基础jQuery元素选取的方法</h3>
+    <div id="qingshixun">我是一个Div</div>
+    <a href="#">我是一个连接</a>
+    <div class="hello-span">
+        <span>我是第一个sqpan</span>
+        <span>我是第二个span</span>
+    </div>
+    <ul>
+        <li class="new-item">我是第一条新闻</li>
+        <li class="new-item">我是第二条新闻</li>
+        <li class="new-item">我是第三条新闻</li>
+    </ul>
+    <div>
+        <label>性别:</label>
+        <!--单选框-->
+        <input type="radio" name="gender" checked="checked" value="male">男
+        <input type="radio" name="gender" value="female">女
+    </div>
+    <div id="hobbyPanel">
+        <label>爱好：</label>
+        <!--多选框-->
+        <input type="checkbox" name="hobby" value="reading" checked="checked">看书
+        <input type="checkbox" name="hobby" value="sport">运动
+    </div>
+    <div>
+        <label for="profession">职业：</label>
+        <select id="profession">
+            <option value="学生">学生</option>
+            <option value="程序猿">程序猿</option>
+            <option value="攻城狮">攻城狮</option>
+        </select>
+    </div>
+        <script type="text/javascript">
+        //页面加载完成后，执行的方法
+       $(function() {
+            //选取 id=“qingshixun”的元素
+            var qsx = $('#qingshixun');
+            alert(qsx.html());
+
+            //选取属性href=“#”的元素
+            var href = $('[href="#"]');
+            alert(href.html());
+
+            //选取class=“hello-span”的div下的所有span元素
+            var hellospan = $("div.hello-span > span");
+
+            alert(hellospan.eq(0).html() + '/' + hellospan.eq(1).html());
+
+            //选取class=new-item的第一个li元素
+            var newitem = $("li.new-item:first");
+            alert(newitem.html());
+
+            //选取input元素中name=gender的选中项h
+            var gender = $("input[name=gender]:checked");
+            alert("性别：" + gender.val());
+
+            //选取id=hobbypanel下的所有选中的input元素
+            var hobby = $("#hobbyPanel > input:checked");
+            alert("选择了：" + hobby.length + "个爱好");
+
+            //选取id=profession中option选中项
+            var profession = $("#profession > option:selected");
+            alert(profession.val());
+        });
+        </script>
+</body>
+
+</html>

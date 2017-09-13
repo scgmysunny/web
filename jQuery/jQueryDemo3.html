@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>遍历</title>
+</head>
+
+<body>
+    <h3>这里演示最基础的jQuery元素遍历方法</h3>
+    <ul id="newPanel" class="news-panel">
+        <li class="one news-item">第一条新闻</li>
+        <li class="two news-item">第二条新闻</li>
+        <li class="three news-item"><span>第三条新闻</span></li>
+    </ul>
+    <script src="D:\Program Files\nodejs\node_modules\jquery\dist\jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    //页面加载完成后执行的方法
+    $(function() {
+        //选取class=new-item的第一个元素
+        var newsitemeq = $(".news-item").eq(0);
+        alert(newsitemeq.html());
+
+        //选取class=new-item的第一个元素
+        var newsitemfirst = $(".news-item").first();
+        alert(newsitemfirst.html());
+
+        //选取id=newspanel的元素下所有的span元素后代
+        var newsitemspan = $("#newPanel").find("span");
+        alert(newsitemspan.html());
+
+        //选取class=one的父元素
+        var newsitemparent = $(".one").parent();
+        alert(newsitemparent.attr("class"));
+
+        //选取class=two元素之后紧邻的同辈元素
+        var newsitemnext = $(".two").next();
+        alert(newsitemnext.html());
+
+    });
+    </script>
+</body>
+
+</html>
