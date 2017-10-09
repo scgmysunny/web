@@ -1,0 +1,66 @@
+#bottomPanel .content-panel .search {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#bottomPanel .content-panel .search>input {
+    width: 300px;
+    height: 20px;
+}
+
+#bottomPanel .content-panel .search>button {
+    margin-left: 20px;
+    height: 30px;
+    width: 80px;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+tr,
+td {
+    border: 1.2px solid #F2EEEE;
+    border-collapse: collapse;
+    padding-left: 10px;
+}
+
+tr {
+    height: 40px;
+}
+
+th {
+    text-align: left;
+    background-color: #DEDEDE;
+}
+
+td:nth-child(1) {
+    width: 20%;
+}
+
+td:nth-child(2),
+td:nth-child(6) {
+    width: 12%;
+}
+
+td:nth-child(3) {
+    width: 30%;
+}
+
+td:nth-child(4) {
+    width: 8%;
+}
+
+td:nth-child(5) {
+    width: 18%;
+}
+
+td:nth-child(6) a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin-left: 5px;
+}
