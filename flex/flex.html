@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style type="text/css" media="screen">
+    #container {
+        width: 660px;
+       /*  height: 110px; */
+
+       height: 310px;
+
+        background-color: pink;
+        color: white;
+        font-size: 50px;
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        display: flex;
+        margin: 0 auto;
+        margin-top: 200px;
+        /* flex-wrap: wrap; */
+        /*  flex-wrap: nowrap; */
+       /*  flex-wrap: wrap-reverse; */
+       /* justify-content: flex-start; */
+       /* justify-content: flex-end; */
+       justify-content: center;
+       /* align-items: flex-start; */
+       /* align-items: flex-end; */
+       align-items: center;
+
+       /* justify-content: space-around; */
+
+       justify-content: space-evenly;/*均匀*/
+
+       /* justify-content: space-between; */
+
+    }
+
+    #container .item {
+        margin: 5px;
+        background-color: #31D811;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+       <!--  <div class="item">3</div>
+        <div class="item">4</div> -->
+       <!--  <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div> -->
+    </div>
+</body>
+
+</html>
